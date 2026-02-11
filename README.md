@@ -1,173 +1,141 @@
-🛡️ CyberSentinel – AI Cyber Security Monitoring Tool
+# 🛡️ CyberSentinel – AI Cyber Security Monitoring Tool
 
-A SOC-style AI-powered cybersecurity monitoring system that analyzes real-time system processes, detects suspicious activity, aggregates threats by severity, and visualizes insights through a live interactive dashboard.
+An AI-powered SOC-style cybersecurity monitoring system that analyzes real-time system processes, detects suspicious activities, aggregates threats by severity, and visualizes insights through a live interactive dashboard.
 
-🚀 Overview
+---
 
-CyberSentinel is a full-stack security monitoring tool built to simulate real-world SOC (Security Operations Center) behavior.
-It monitors system processes, detects abnormal activity using rule-based logic, reduces alert noise through aggregation, and presents security insights in a live dashboard.
+## 🚀 Overview
 
-This project demonstrates practical cybersecurity monitoring concepts combined with modern web technologies.
+CyberSentinel is a full-stack security monitoring tool designed to simulate real-world Security Operations Center (SOC) behavior.
 
-✨ Features
+It:
+- Monitors system processes in real time
+- Detects suspicious behavior using rule-based logic
+- Reduces alert noise via aggregation
+- Displays insights in a live dashboard
 
-🔍 Real-time system process monitoring
+This project demonstrates practical cybersecurity + full-stack development skills.
 
-🚨 Suspicious activity detection
+---
 
-⚠️ Severity-based threat classification (Low / Medium / High)
+## ✨ Key Features
 
-📊 SOC-style live dashboard
+- 🔍 Real-time system monitoring  
+- 🚨 Suspicious process detection  
+- ⚠️ Severity classification (Low / Medium / High)  
+- 📊 Live SOC-style dashboard  
+- 🔄 Auto-refresh monitoring  
+- 🔔 Live alerts panel  
+- 📈 Threat frequency tracking  
+- 📥 CSV threat report export  
 
-🔄 Auto-refresh monitoring
+---
 
-🔔 Live alerts panel
+## 🧠 System Architecture
 
-📈 Threat frequency aggregation
+System Monitor  
+→ Threat Detection Engine  
+→ SQLite Database  
+→ FastAPI Analytics APIs  
+→ React Dashboard  
 
-📥 CSV report export
+---
 
-📦 Clean GitHub-ready project structure
+## 🛠 Tech Stack
 
-🧠 How It Works
-System Monitor
-      ↓
-Threat Detection Engine
-      ↓
-SQLite Threat Database
-      ↓
-FastAPI Analytics APIs
-      ↓
-React SOC Dashboard
+### Backend
+- Python
+- FastAPI
+- SQLite
+- psutil (System Monitoring)
 
+### Frontend
+- React.js
+- Axios
+- Recharts (Charts & Visualization)
 
-The backend collects system process data using Python.
+---
 
-Suspicious behavior is detected via rule-based logic.
+## ⚙️ Installation & Setup
 
-Threats are stored and aggregated in a SQLite database.
+### 1. Clone Repository
 
-Severity analytics APIs provide structured insights.
+git clone https://github.com/codewithakkii/ai-threat-detection-system.git  
+cd ai-threat-detection-system  
 
-A React dashboard visualizes security metrics in real time.
+---
 
-🛠 Tech Stack
-Backend
+### 2. Backend Setup
 
-Python
-
-FastAPI
-
-SQLite
-
-psutil (System Monitoring)
-
-Frontend
-
-React.js
-
-Axios
-
-Recharts (Data Visualization)
-
-📂 Project Structure
-ai-threat-detection-system/
-│
-├── backend/
-│   ├── main.py
-│   ├── detectors/
-│   ├── monitors/
-│   └── database/
-│
-├── frontend/
-│   ├── src/
-│   ├── components/
-│   └── api.js
-│
-└── README.md
-
-⚙️ Installation & Setup
-1️⃣ Clone the Repository
-git clone https://github.com/yourusername/ai-threat-detection-system.git
-cd ai-threat-detection-system
-
-2️⃣ Backend Setup
-cd backend
-python -m venv venv
-venv\Scripts\activate   # Windows
-pip install -r requirements.txt
-uvicorn main:app --reload
-
+cd backend  
+python -m venv venv  
+venv\Scripts\activate  
+pip install -r requirements.txt  
+uvicorn main:app --reload  
 
 Backend runs at:
+http://127.0.0.1:8000  
 
-http://127.0.0.1:8000
+---
 
-3️⃣ Frontend Setup
-cd frontend
-npm install
-npm start
+### 3. Frontend Setup
 
+cd frontend  
+npm install  
+npm start  
 
 Dashboard runs at:
+http://localhost:3000  
 
-http://localhost:3000
+---
 
-📊 Dashboard Capabilities
+## 📊 Dashboard Capabilities
 
-Severity distribution analytics
+- Severity distribution analytics  
+- Top risky processes tracking  
+- Live security alerts  
+- Auto refresh every 5 seconds  
+- CSV report generation  
 
-Top risky processes tracking
+---
 
-Live security alerts
+## 🎯 Use Case
 
-Automated periodic refresh
+- SOC monitoring simulation  
+- Cybersecurity learning project  
+- Resume / portfolio showcase  
+- Security analytics demonstration  
 
-Downloadable threat reports
+---
 
-🎯 Use Cases
+## 🔐 Security Design Highlights
 
-Learning SOC monitoring concepts
+- False positives reduced via whitelist logic  
+- Duplicate alert aggregation using frequency tracking  
+- Severity-based threat grouping  
+- Clean structured APIs for analytics  
 
-Demonstrating cybersecurity skills
+---
 
-Resume & portfolio project
+## 📈 Future Improvements
 
-Security analytics practice
+- ML-based anomaly detection  
+- Authentication & role-based access  
+- Docker deployment  
+- Cloud agent integration  
+- Historical analytics charts  
 
-🔐 Security Design Notes
+---
 
-False positives reduced using whitelist logic
+## 💼 Resume Summary Line
 
-Threats aggregated by process frequency
+Built an AI-powered cybersecurity monitoring tool that analyzes real-time system processes, detects suspicious behavior, aggregates threats by severity, and visualizes insights through a live SOC-style dashboard.
 
-Real-time refresh simulates SOC monitoring
+---
 
-Local backend ensures system-level access
+## 👨‍💻 Author
 
-📈 Future Improvements
-
-Machine learning anomaly detection
-
-Authentication & role-based access
-
-Docker deployment
-
-Cloud-hosted monitoring agent
-
-Historical trend analytics
-
-💼 Resume Highlight
-
-Built an AI-powered cybersecurity monitoring system that analyzes real-time system processes, detects suspicious activities, aggregates threats by severity, and visualizes insights through a live SOC-style dashboard.
-
-📄 License
-
-This project is built for educational and demonstration purposes.
-
-👨‍💻 Author
-
-Developed by CodeWithAkki
+Developed by CodeWithAkki  
 Cybersecurity & AI Enthusiast 🚀
 
-If you want to contribute, suggest improvements, or provide feedback — feel free to open an issue.
+
